@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>关于</string>
   </property>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
@@ -41,7 +41,7 @@
     </font>
    </property>
    <property name="text">
-    <string>少女前线2：追放卸载程序</string>
+    <string>少女前线2：追放删除程序</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
