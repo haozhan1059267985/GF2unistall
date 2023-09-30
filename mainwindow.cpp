@@ -101,8 +101,14 @@ void MainWindow::on_pushButton_4_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
+    QMessageBox::StandardButton res;
+    res=QMessageBox::question(this,"","确认要删除少女前线2：追放的游戏文件吗？");
+    if(res==QMessageBox::Yes)
+    {
     for(QFileInfo &it:listGF2)
     {
+
+
         if(it.isFile())
         {
             if(QFile::remove(it.filePath()))
@@ -128,10 +134,7 @@ void MainWindow::on_pushButton_2_clicked()
         }
         else if(it.isDir())
         {
-            QMessageBox::StandardButton res;
-            res=QMessageBox::question(this,"","确认要删除少女前线2：追放的游戏文件吗？");
-            if(res==QMessageBox::Yes)
-            {
+
             if(QDir(it.filePath()).removeRecursively())
             {
                 for(int i=0;i<filelist.length();i++)
@@ -152,8 +155,10 @@ void MainWindow::on_pushButton_2_clicked()
                     }
                 }
             }
-            }
+
         }
+
+    }
     }
 }
 
