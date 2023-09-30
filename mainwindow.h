@@ -13,7 +13,6 @@ You should have received a copy of the GNU General Public License along with Foo
 
 #include <QMainWindow>
 #include <QFileDialog>
-#include <QUrl>
 #include <QStandardItemModel>
 #include <QFile>
 #include <QMessageBox>

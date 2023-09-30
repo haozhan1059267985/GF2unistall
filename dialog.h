@@ -14,7 +14,6 @@ You should have received a copy of the GNU General Public License along with Foo
 #include <QGraphicsScene>
 #include <QDialog>
 #include <QPixmap>
-#include <QImage>
 namespace Ui {
 class Dialog;
 }

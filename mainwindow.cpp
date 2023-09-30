@@ -1,12 +1,11 @@
-
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <QFileDialog>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->setWindowIcon(QIcon(":/image/4.png"));
     file_list_model=new QStandardItemModel;
     ui->file_list->setModel(file_list_model);
     file_list_model->setHorizontalHeaderLabels(QStringList()={"文件名","类型","路径","状态"});
